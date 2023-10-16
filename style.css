@@ -1,0 +1,228 @@
+:root {
+    --primary-bgc: hsl(0, 100%, 74%);
+    --primary-bgc-button: hsl(154, 59%, 51%);
+    --try-it-accent-bgc: hsl(248, 32%, 49%);
+    --neutral-color1: hsl(249, 10%, 26%);
+    --neutral-color2: hsl(246, 25%, 77%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: var(--primary-bgc);
+    color: #fff;
+}
+
+.signup-wrapper {
+    margin: auto;
+    width: 400px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 14px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.content h1 {
+    text-align: center;
+    margin-block: 0;
+    font-size: 24px;
+}
+
+.content p {
+    text-align: center;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.tryIT {
+    background-color: var(--try-it-accent-bgc);
+    padding: 20px;
+    border: none;
+    border-radius: 4px;
+    color: inherit;
+    font-weight: 500;
+    width: 100%;
+    cursor: pointer;
+    box-shadow: 0 2.2px 1px var(--primary-bgc);
+}
+
+.messageFor {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.success {
+    color: var(--primary-bgc-button);
+}
+
+.fail {
+    color: var(--primary-bgc);
+}
+
+.form-service {
+    background-color: #fff;
+    border-radius: 6px;
+    width: 100%;
+    padding: 20px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.form-control.success input {
+    border: 2px solid var(--primary-bgc-button);
+}
+
+.form-control.error input {
+    border: 2px solid var(--primary-bgc);
+}
+
+.form input {
+    border: 2px solid var(--neutral-color1);
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    font-family: inherit;
+}
+
+.form .fa {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control.success .fa-check-circle {
+    visibility: visible;
+    color: var(--primary-bgc-button);
+}
+
+.form-control.error .fa-exclamation-circle {
+    visibility: visible;
+    color: var(--primary-bgc);
+}
+
+.form .message {
+    font-size: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: var(--primary-bgc);
+    visibility: hidden;
+}
+
+.form-control.error .message {
+    visibility: visible;
+    color: var(--primary-bgc);
+}
+
+
+.submit {
+    background-color: var(--primary-bgc-button);
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.termsAndservice {
+    color: var(--neutral-color2);
+    font-size: 10px;
+    display: block;
+    text-align: center;
+}
+
+.termsAndservice span {
+    color: var(--primary-bgc);
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .signup-wrapper {
+        width: 100vw;
+        min-width: 200px;
+    }
+
+    .termsAndservice {
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .signup-wrapper {
+        width: 80%;
+        max-width: 1440px;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .content {
+        width: 50%;
+        justify-content: start;
+        align-items: start;
+        gap: 16px;
+    }
+
+    .content h1 {
+        width: 80%;
+        font-size: 32px;
+        text-align: left;
+        max-width: 345px;
+    }
+
+    .content p {
+        text-align: left;
+        width: 100%;
+        max-width: 446px;
+    }
+
+    .form-wrapper {
+        width: calc(50% - 20px);
+    }
+}

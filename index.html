@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->  
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="signup-wrapper">
+    <div class="content">   
+        <h1> Learn to code by watching others </h1>    
+        <p>    
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p>
+    </div> 
+
+    <div class="form-wrapper">
+      <button type="button" class="tryIT">Try it free 7 days then $20/mo. thereafter</button>
+      <div class="form-service">  
+        <div class="messageFor"></div> 
+               
+        <form action="/"  class="form" id="form" novalidate>
+          <div class="form-control">
+            <input type="text" placeholder="First Name" name="First Name" id="firstname">       
+            <i class="fa fa-check-circle" class="pass" aria-hidden="true"></i>        
+            <i class="fa fa-exclamation-circle" class="fail" aria-hidden="true"></i>        
+            <small class="message"></small>
+          </div>
+
+          <div class="form-control">
+            <input type="text" placeholder="Last Name" name="Last Name" id="lastname">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>        
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small class="message"></small>
+          </div>
+          
+          <div class="form-control">
+            <input type="email" name="Email Address" placeholder="Email Address" id="email" >
+            <i class="fa fa-check-circle" aria-hidden="true"></i>        
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small class="message"></small>
+          </div>
+
+          <div class="form-control">
+            <input type="password" name="Password" placeholder="Password" id="password">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>        
+            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+            <small class="message"></small>
+          </div>
+
+          <button type="submit" class="submit">Claim your free trial</button>
+        </form>
+        <small class="termsAndservice">By clicking the button, you are agreeing to our <span>Terms and Services</span></small> 
+      </div> 
+
+    </div> 
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -67,7 +67,7 @@ body {
     font-weight: 500;
     width: 100%;
     cursor: pointer;
-    /* box-shadow: 200px var(--try-it-accent-bgc); */
+    box-shadow: 0 2.2px 1px var(--primary-bgc);
 }
 
 .messageFor {
